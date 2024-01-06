@@ -10,6 +10,7 @@
 \usepackage{pgfplots}
 \usepackage{listings,listings-rust}
 \usepackage{chronosys}
+\usepackage{url}
 
 \definecolor{LightCyan}{rgb}{0.88,1,1}
 
@@ -88,7 +89,7 @@
 
  {
   These two concepts are the core of rust's memory safety, and are enforced by static analysis at compile time. Absent the presence of unsafe code(where the developer explicitly tells the compiler that they will handle memory safety), or a bug in the compiler, these features (among others) avoid many of the memory safety issues that plague C (and C++).
-  It's worth noting since we are concerned about it's capability as an programming language for domains that are performance critical that on benchmarks it tends to perform similarly to C and C++\cite{costanzoPerformanceVsProgramming2021} and in some cases outperform them \cite{rooneyEvaluatingFFTPerformance2023a}. However, neither performance nor memory safety are not the focus of this paper and were only mentioned to provide context.
+  It's worth noting since we are concerned about it's capability as an programming language for domains that are performance critical that on benchmarks it tends to perform similarly to C and C++\cite{costanzoPerformanceVsProgramming2021} and in some cases outperform them \cite{rooneyEvaluatingFFTPerformance2023}. However, neither performance nor memory safety are not the focus of this paper and were only mentioned to provide context.
  }
 
  {Developer experience is a broad term that seems to have multiple, potentially conflicting, definitions. Microsoft for example, defines developer experience as "How easy or difficult it is for a developer to perform essential task needed to implement a change"\cite{DeveloperExperienceDevEx} and seems to center their definition around velocity. Github oddly enough defines it as "how the juxtaposition of developers, processes, and tools positively or negatively affects software development"\cite{davisDeveloperExperienceWhat2023}.
@@ -221,56 +222,56 @@ google was for non-academic sources, such as blog post or github issues.
     \def\arraystretch{1.3}
     \begin{tabular}{p{0.1\linewidth}p{0.65\linewidth}p{0.1\linewidth}}
         \hline
-        ID  & Author(s)                            & Ref                                                        \\
+        ID  & Author(s)                            & Ref                                                         \\
         \hline
         \hline
-        S1  & Costanzo, Manuel et al.              & \cite{costanzoPerformanceVsProgramming2021}                \\
+        S1  & Costanzo, Manuel et al.              & \cite{costanzoPerformanceVsProgramming2021}                 \\
         \hline
-        S2  & Fakhoury, Sarah et al.               & \cite{fakhouryEffectPoorSource2018}                        \\
+        S2  & Fakhoury, Sarah et al.               & \cite{fakhouryEffectPoorSource2018}                         \\
         \hline
-        S3  & Nadeem, Ayman                        & \cite{nadeemHumancenteredApproachStaticanalysisdriven2022} \\
+        S3  & Nadeem, Ayman                        & \cite{nadeemHumancenteredApproachStaticanalysisdriven2022a} \\
         \hline
-        S4  & Davis, Gwen                          & \cite{davisDeveloperExperienceWhat2023}                    \\
+        S4  & Davis, Gwen                          & \cite{davisDeveloperExperienceWhat2023}                     \\
         \hline
-        S5  & Noseda, Mario et al.                 & \cite{nosedaRustSecureIoT2022}                             \\
+        S5  & Noseda, Mario et al.                 & \cite{nosedaRustSecureIoT2022}                              \\
         \hline
-        S6  & Sudwoj, Michal                       & \cite{sudwojRustProgrammingLanguage2020}                   \\
+        S6  & Sudwoj, Michal                       & \cite{sudwojRustProgrammingLanguage2020}                    \\
         \hline
-        S7  & Fulton, Kelsey R. et al.             & \cite{fultonBenefitsDrawbacksAdopting2021}                 \\
+        S7  & Fulton, Kelsey R. et al.             & \cite{fultonBenefitsDrawbacksAdopting2021}                  \\
         \hline
-        S8  & Astrauskas, Vytautas et al.          & \cite{astrauskasHowProgrammersUse2020}                     \\
+        S8  & Astrauskas, Vytautas et al.          & \cite{astrauskasHowProgrammersUse2020}                      \\
         \hline
-        S9  & Fagerholm, Fabian et al.             & \cite{fagerholmDeveloperExperienceConcept2012}             \\
+        S9  & Fagerholm, Fabian et al.             & \cite{fagerholmDeveloperExperienceConcept2012}              \\
         \hline
-        S10 & Graziotin, Daniel et al.             & \cite{graziotin2015you}                                    \\
+        S10 & Graziotin, Daniel et al.             & \cite{graziotin2015you}                                     \\
         \hline
-        S11 & Gulati, Aryan                        & \cite{gulati2022can}                                       \\
+        S11 & Gulati, Aryan                        & \cite{gulati2022can}                                        \\
         \hline
-        S12 & Hu, Shuang et al.                    & \cite{huComprehensivenessAutomationLifecycle2022}          \\
+        S12 & Hu, Shuang et al.                    & \cite{huComprehensivenessAutomationLifecycle2022}           \\
         \hline
-        S13 & Noda, Abi et al.                     & \cite{nodaDevExWhatActually2023}                           \\
+        S13 & Noda, Abi et al.                     & \cite{nodaDevExWhatActually2023}                            \\
         \hline
-        S14 & Oikawa                               & \cite{oikawaExperienceDevelopingFAT2023}                   \\
+        S14 & Oikawa                               & \cite{oikawaExperienceDevelopingFAT2023}                    \\
         \hline
-        S15 & Developer Experience DevEx           & \cite{DeveloperExperienceDevEx}                            \\
+        S15 & Developer Experience DevEx           & \cite{DeveloperExperienceDevEx}                             \\
         \hline
-        S16 & Saiorse                              & \cite{saoirseWhyAsyncRust2023}                             \\
+        S16 & Saiorse                              & \cite{saoirseWhyAsyncRust2023}                              \\
         \hline
-        S17 & Xu, Hui                              & \cite{xuMemorySafetyChallengeConsidered2021}               \\
+        S17 & Xu, Hui                              & \cite{xuMemorySafetyChallengeConsidered2021}                \\
         \hline
-        S18 & Britannica                           & \cite{SystemsProgrammingDefinition}                        \\
+        S18 & Britannica                           & \cite{SystemsProgrammingDefinition}                         \\
         \hline
-        S19 & Guidelines for Performing Systematic & \cite{GuidelinesPerformingSystematic}                      \\
+        S19 & Guidelines for Performing Systematic & \cite{GuidelinesPerformingSystematic}                       \\
         \hline
-        S20 & Balasubramanian et al.               & \cite{balasubramanianSystemProgrammingRust2017}            \\
+        S20 & Balasubramanian et al.               & \cite{balasubramanianSystemProgrammingRust2017}             \\
         \hline
-        S21 & Rooney, Sean et al.                  & \cite{rooneyEvaluatingFFTPerformance2023a}                 \\
+        S21 & Rooney, Sean et al.                  & \cite{rooneyEvaluatingFFTPerformance2023}                   \\
         \hline
-        S22 & Tracey, Brendan et al.               & \cite{traceyGradingCurveHow2023}                           \\
+        S22 & Tracey, Brendan et al.               & \cite{traceyGradingCurveHow2023}                            \\
         \hline
-        S23 & Nischal, Shrestha                    & \cite{shresthaHereWeGo2020}                                \\
+        S23 & Nischal, Shrestha                    & \cite{shresthaHereWeGo2020}                                 \\
         \hline
-        S24 & Ardito, Luca et al.                  & \cite{arditoEvaluationRustCode2021}                        \\
+        S24 & Ardito, Luca et al.                  & \cite{arditoEvaluationRustCode2021}                         \\
         \hline
 
     \end{tabular}
@@ -328,14 +329,14 @@ google was for non-academic sources, such as blog post or github issues.
     \chronoevent[date=false,markdepth=55pt]{06/2022}{\cite{nosedaRustSecureIoT2022}}
 
     \chronoevent[date=false,markdepth=40pt]{11/13/2020}{\cite{astrauskasHowProgrammersUse2020}}
-    \chronoevent[date=false,markdepth=40pt]{03/2022}{\cite{nadeemHumancenteredApproachStaticanalysisdriven2022}}
+    \chronoevent[date=false,markdepth=40pt]{03/2022}{\cite{nadeemHumancenteredApproachStaticanalysisdriven2022a}}
     \chronoevent[date=false,markdepth=40pt]{2023}{\cite{oikawaExperienceDevelopingFAT2023}}
     \chronoevent[date=false,markdepth=40pt]{10/2023}{\cite{saoirseWhyAsyncRust2023}}
 
     \chronoevent[date=false,markdepth=25pt]{09/11/2020}{\cite{sudwojRustProgrammingLanguage2020}}
     \chronoevent[date=false,markdepth=25pt]{2022}{\cite{gulati2022can}}
     \chronoevent[date=false,markdepth=25pt]{2023}{\cite{davisDeveloperExperienceWhat2023}}
-    \chronoevent[date=false,markdepth=25pt]{03/2023}{\cite{rooneyEvaluatingFFTPerformance2023a}}
+    \chronoevent[date=false,markdepth=25pt]{03/2023}{\cite{rooneyEvaluatingFFTPerformance2023}}
     \chronoevent[date=false,markdepth=25pt]{06/08/2023}{\cite{nodaDevExWhatActually2023}}
 
     \chronoevent[date=false]{06/27/2020}{\cite{shresthaHereWeGo2020}}
